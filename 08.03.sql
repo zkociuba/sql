@@ -121,3 +121,11 @@ C.customer_id= P.customer_id
 GROUP BY
 C.customer_id
 ORDER BY Zaplacil DESC;
+
+
+CREATE VIEW CountryCapitalView AS
+SELECT country.Name AS CountryName, city.Name AS CapitalName
+FROM country
+INNER JOIN city ON country.Capital = city.ID;
+
+
