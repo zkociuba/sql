@@ -123,9 +123,20 @@ C.customer_id
 ORDER BY Zaplacil DESC;
 
 
+
+ZADANIE 30
+-stwórz widok powstały na podstawie 2 tabel z bazy danych world
 CREATE VIEW CountryCapitalView AS
 SELECT country.Name AS CountryName, city.Name AS CapitalName
 FROM country
 INNER JOIN city ON country.Capital = city.ID;
+
+-sprawdz widoki w bazie danych Sakila i stworz 3 widoki podobne z użyciem join  
+
+-dodaj do tabeli z językami jeszcze informacje o kraju, aby widzieć już nie po kodzie kraju, ale
+po nazwie kraju jaki jest język, czy jest oficjalny i w ilu "procentach" jest uzywany.
+Informacje o kraju dodaj z tabeli country do countrylanguage i powiąż po kodzie, gdzie w jednej tabeli nazywa się to code, a w drugiej Countrycode.
+Aby to zrobić uzyj lewostronnego połączenia.
+
 
 
